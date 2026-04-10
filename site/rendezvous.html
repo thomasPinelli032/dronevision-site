@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre rendez-vous</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1>DroneVision</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+    </nav>
+</header>
+
+<!-- FORMULAIRE -->
+<section>
+    <form id="form">
+
+        <h2>Prendre un rendez-vous</h2>
+
+        <input type="text" id="nom" placeholder="Nom complet" required>
+
+        <input type="email" id="email" placeholder="Email" required>
+
+        <input type="tel" id="tel" placeholder="Téléphone" required>
+
+        <input type="text" id="adresse" placeholder="Adresse" required>
+
+        <select id="prestation">
+            <option value="Toiture">Inspection de toiture</option>
+            <option value="Événement">Événement</option>
+            <option value="Immobilier">Immobilier</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <select id="heure">
+            <option value="09:00">09:00</option>
+            <option value="11:00">11:00</option>
+            <option value="14:00">14:00</option>
+            <option value="16:00">16:00</option>
+        </select>
+
+        <button type="submit">Valider</button>
+
+        <p id="message"></p>
+
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - DroneVision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1>Admin Panel</h1>
+    <nav>
+        <a href="index.html">Retour site</a>
+    </nav>
+</header>
+
+<!-- LOGIN -->
+<section id="loginBox">
+    <h2>Connexion admin</h2>
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="login()">Connexion</button>
+</section>
+
+<!-- PANEL ADMIN -->
+<section id="adminPanel" style="display:none; padding:20px;">
+
+    <h2>Réservations</h2>
+    <div id="list"></div>
+
+    <hr>
+
+    <h2>Bloquer une date</h2>
+    <input type="date" id="blockDate">
+    <button onclick="blockDate()">Bloquer</button>
+
+    <h2>Bloquer une semaine</h2>
+    <input type="date" id="weekDate">
+    <button onclick="blockWeek()">Bloquer semaine</button>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
